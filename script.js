@@ -59,12 +59,19 @@ function socialMediaCard() {
     let footerArticle = document.createElement("footer");
     newArticle.appendChild(footerArticle);
 
-    let divFooter = document.createElement("div");
-    footerArticle.appendChild(divFooter);
+    let divFooter1 = document.createElement("div");
+    footerArticle.appendChild(divFooter1);
 
-    divFooter.appendChild(footerArrayA[0]); 
-    divFooter.appendChild(footerArrayA[1]); 
-    footerArticle.appendChild(footerArrayA[2]);
+    let divFooter2 = document.createElement("div");
+    footerArticle.appendChild(divFooter2);
+  
+    divFooter1.appendChild(footerArrayA[0]); 
+    divFooter1.appendChild(footerArrayA[1]); 
+    divFooter2.appendChild(footerArrayA[2]);
+
+    let numberOfLike = document.createElement("p");
+    divFooter2.appendChild(numberOfLike);
+    numberOfLike.innerText += 10;
 }
 
 socialMediaCard();
