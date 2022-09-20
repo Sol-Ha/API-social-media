@@ -1,5 +1,5 @@
 let fetchDatas = async function () {
-  let url = await fetch ("https://graph.instagram.com/media?access_token=IGQVJWc0hxLUJHd011STdicGNSOXg3Q3BvNEJLYmRnOGREeDk4R0VkbkRRdXhwdWNaTUlWcU9SYXRKNVoyOXBnREVKUmpBWVktdnEtOXltYkgtdG1ZAVmwxXzY5YnNPNTBCaVg2czZAR&fields=caption,media_url,timestamp,like_count");
+  let url = await fetch ("");
   let dataJson = await url.json();
 
   console.log(dataJson);
